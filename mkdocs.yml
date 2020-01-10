@@ -5,7 +5,7 @@ theme:
     name: mkdocs
     custom_dir: custom_theme
 nav:
-    - Home: home.md
+    - Home: index.md
     - Glossary: glossary.md
     - Protocol: protocol.md
 plugins:
