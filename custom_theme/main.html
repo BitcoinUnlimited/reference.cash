@@ -24,3 +24,12 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
         onload="renderMathInElement(document.body);"></script>
 {% endblock %}
+
+{# Fix "edit" URL, because mkdocs assumes docs are in folder docs #}
+{% block repo %}
+    <li class="nav-item">
+        <a href="{{ page.edit_url | replace("docs/", "") | replace("master/index.md", "master/home.md") }}" class="nav-link">
+            <i class="fa fa-github"></i> Edit on {{ config.repo_name }}
+        </a>
+    </li>
+{% endblock %}
