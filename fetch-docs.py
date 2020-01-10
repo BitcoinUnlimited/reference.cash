@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
+import glob
 import logging
-import sys
 import os
+import shutil
+import sys
 
 DOCS_REPO = "https://github.com/BitcoinUnlimited/BitcoinCashSpecification.git"
 DOCS_DIR = "docs"
@@ -34,5 +36,9 @@ else:
 # mkdocs expects there to be a index.md, while the spec has named this file
 # home.md
 os.rename("docs/home.md", "docs/index.md")
+
+# copy static files, they need to be in docs root
+for f in glob.glob(os.path.join("static", "*.*")):
+    shutil.copy(f, "docs/")
 
 logging.info("DONE")
