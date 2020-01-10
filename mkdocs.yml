@@ -1,0 +1,15 @@
+site_name: Bitcoin Cash Reference Documentation
+docs_dir: docs
+repo_url: https://github.com/BitcoinUnlimited/BitcoinCashSpecification
+theme:
+    name: mkdocs
+    custom_dir: custom_theme
+nav:
+    - Home: home.md
+    - Glossary: glossary.md
+    - Protocol: protocol.md
+plugins:
+    - referencecash
+    - search
+extra_javascript:
+    - https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
