@@ -1,4 +1,4 @@
-site_name: Bitcoin Cash Reference Documentation
+site_name: Bitcoin Cash Reference
 docs_dir: docs
 repo_url: https://github.com/BitcoinUnlimited/BitcoinCashSpecification
 theme:
