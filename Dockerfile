@@ -10,6 +10,7 @@ RUN pip install --no-cache-dir mkdocs
 # Implicit requirement of referencecash plugin
 RUN pip install --no-cache-dir bs4
 RUN pip install --no-cache-dir python-git
+RUN pip install --no-cache-dir pymdown-extensions
 RUN (cd mkdocs-referencecash-plugin; python3 setup.py install)
 
 WORKDIR /workdir
