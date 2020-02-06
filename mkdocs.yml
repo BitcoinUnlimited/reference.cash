@@ -10,52 +10,68 @@ nav:
         - Block header: protocol/blockchain/block/block-header.md
         - Block: protocol/blockchain/block.md
         - Blockchain basics: protocol/blockchain.md
-        - Hashing algorithm: protocol/blockchain/hash.md
-        - Proof of work: protocol/blockchain/proof-of-work.md
-        - Protocol: protocol.md
-        - Transaction:
-            - Transaction: protocol/blockchain/transaction.md
-            - Locking script: protocol/blockchain/transaction/locking-script.md
-            - Unlocking script: protocol/blockchain/transaction/unlocking-script.md
-        - Transaction validation:
-            - Transaction validation: protocol/blockchain/transaction-validation.md
-            - Block level validation rules: protocol/blockchain/transaction-validation/block-level-validation-rules.md
-            - Network level validation rules: protocol/blockchain/transaction-validation/network-level-validation-rules.md
-        - Merkle tree: protocol/blockchain/block/merkle-tree.md
-        - Transaction ordering: protocol/blockchain/block/transaction-ordering.md
         - Difficulty adjustment algorithm: protocol/blockchain/proof-of-work/difficulty-adjustment-algorithm.md
+        - Hashing algorithm: protocol/blockchain/hash.md
+        - Merkle tree: protocol/blockchain/block/merkle-tree.md
         - Mining: protocol/blockchain/proof-of-work/mining.md
-        - Script:
-            - Script: protocol/blockchain/script.md
-            - Opcode OP_DATA_X: protocol/blockchain/script/op-codes/op-data-x.md
-            - Opcode OP_X: protocol/blockchain/script/op-codes/op-x.md
-        - P2P messages:
-            - Compact int: protocol/p2p/compact__int.md
+        - Miscellaneous:
+            - Endian: protocol/misc/endian.md
+        - Network messages:
             - Handshake: protocol/network/node-handshake.md
             - Network messages: protocol/network/messages.md
-            - Services field: protocol/p2p/services__field.md
-            - Vector: protocol/p2p/vector.md
-            - addr: protocol/p2p/addr.md
+            - addr: protocol/network/messages/addr.md
             - blockheader: protocol/p2p/block__header.md
-            - filteradd: protocol/p2p/filteradd.md
-            - filterclear: protocol/p2p/filterclear.md
-            - filterload: protocol/p2p/filterload.md
-            - getblocks: protocol/p2p/getblocks.md
-            - getdata: protocol/p2p/getdata.md
-            - getheader: protocol/p2p/getheaders.md
-            - headers: protocol/p2p/headers.md
-            - inv: protocol/p2p/inv.md
-            - merkleblock: protocol/p2p/merkleblock.md
-            - ping: protocol/p2p/ping.md
-            - pong: protocol/p2p/pong.md
-            - reject: protocol/p2p/reject.md
+            - filteradd: protocol/network/messages/filteradd.md
+            - filterclear: protocol/network/messages/filterclear.md
+            - filterload: protocol/network/messages/filterload.md
+            - getblocks: protocol/network/messages/getblocks.md
+            - getdata: protocol/network/messages/getdata.md
+            - getheader: protocol/network/messages/getheaders.md
+            - headers: protocol/network/messages/headers.md
+            - inv: protocol/network/messages/inv.md
+            - merkleblock: protocol/network/messages/merkleblock.md
+            - ping: protocol/network/messages/ping.md
+            - pong: protocol/network/messages/pong.md
+            - reject: protocol/network/messages/reject.md
             - verack: protocol/network/messages/verack.md
             - version: protocol/network/messages/version.md
             - xupdate: protocol/p2p/xupdate.md
             - xverack: protocol/p2p/xverack.md
             - xversion: protocol/p2p/xversion.md
-        - Miscellaneous:
-            - Endian: protocol/misc/endian.md
+        - P2P:
+            - Compact int: protocol/p2p/compact__int.md
+            - Services field: protocol/p2p/services__field.md
+            - Vector: protocol/p2p/vector.md
+        - Proof of work: protocol/blockchain/proof-of-work.md
+        - Protocol: protocol.md
+        - Script:
+            - Script: protocol/blockchain/script.md
+            - Opcode OP_DATA_X: protocol/blockchain/script/op-codes/op-data-x.md
+            - Opcode OP_X: protocol/blockchain/script/op-codes/op-x.md
+        - Transaction:
+            - Transaction: protocol/blockchain/transaction.md
+            - Locking script: protocol/blockchain/transaction/locking-script.md
+            - Unlocking script: protocol/blockchain/transaction/unlocking-script.md
+        - Transaction ordering: protocol/blockchain/block/transaction-ordering.md
+        - Transaction validation:
+            - Transaction validation: protocol/blockchain/transaction-validation.md
+            - Block level validation rules: protocol/blockchain/transaction-validation/block-level-validation-rules.md
+            - Network level validation rules: protocol/blockchain/transaction-validation/network-level-validation-rules.md
+        - Upgrades:
+            - BIP0016: protocol/forks/bip-0016.md
+            - BIP0034: protocol/forks/bip-0034.md
+            - BIP0037: protocol/forks/bip-0037.md
+            - BIP0064: protocol/forks/bip-0064.md
+            - BIP0065: protocol/forks/bip-0065.md
+            - BIP0066: protocol/forks/bip-0066.md
+            - BIP0068: protocol/forks/bip-0068.md
+            - BIP0112: protocol/forks/bip-0112.md
+            - BIP0113: protocol/forks/bip-0113.md
+            - BIP0157: protocol/forks/bip-0157.md
+            - BIP0158: protocol/forks/bip-0158.md
+            - BIP0159: protocol/forks/bip-0159.md
+            - HF-2017-Nov: protocol/forks/hf-20171113.md
+
     - Glossary:
         - Glossary: glossary.md
         - Block: glossary/block.md
