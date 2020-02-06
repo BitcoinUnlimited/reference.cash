@@ -17,4 +17,17 @@ class ReferenceCashPlugin(BasePlugin):
             # remove meta tags
             meta.clear()
 
+        # cwik wants links to end with .md
+        links = soup.find_all("a")
+        for a in links:
+            try:
+                # ignore external URLs
+                if a['href'].startswith("http"):
+                    continue
+
+                if a['href'].endswith(".md"):
+                    a['href'] = a['href'][:-3]
+            except KeyError:
+                pass
+
         return str(soup)
