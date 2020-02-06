@@ -6,8 +6,76 @@ theme:
     custom_dir: custom_theme
 nav:
     - Home: index.md
-    - Glossary: glossary.md
-    - Protocol: protocol.md
+    - Protocol:
+        - Block header: protocol/blockchain/block/block-header.md
+        - Block: protocol/blockchain/block.md
+        - Blockchain basics: protocol/blockchain.md
+        - Hashing algorithm: protocol/blockchain/hash.md
+        - Proof of work: protocol/blockchain/proof-of-work.md
+        - Protocol: protocol.md
+        - Transaction:
+            - Transaction: protocol/blockchain/transaction.md
+            - Locking script: protocol/blockchain/transaction/locking-script.md
+            - Unlocking script: protocol/blockchain/transaction/unlocking-script.md
+        - Transaction validation:
+            - Transaction validation: protocol/blockchain/transaction-validation.md
+            - Block level validation rules: protocol/blockchain/transaction-validation/block-level-validation-rules.md
+            - Network level validation rules: protocol/blockchain/transaction-validation/network-level-validation-rules.md
+        - Merkle tree: protocol/blockchain/block/merkle-tree.md
+        - Transaction ordering: protocol/blockchain/block/transaction-ordering.md
+        - Difficulty adjustment algorithm: protocol/blockchain/proof-of-work/difficulty-adjustment-algorithm.md
+        - Mining: protocol/blockchain/proof-of-work/mining.md
+        - Script:
+            - Script: protocol/blockchain/script.md
+            - Opcode OP_DATA_X: protocol/blockchain/script/op-codes/op-data-x.md
+            - Opcode OP_X: protocol/blockchain/script/op-codes/op-x.md
+        - P2P messages:
+            - Compact int: protocol/p2p/compact__int.md
+            - Handshake: protocol/network/node-handshake.md
+            - Network messages: protocol/network/messages.md
+            - Services field: protocol/p2p/services__field.md
+            - Vector: protocol/p2p/vector.md
+            - addr: protocol/p2p/addr.md
+            - blockheader: protocol/p2p/block__header.md
+            - filteradd: protocol/p2p/filteradd.md
+            - filterclear: protocol/p2p/filterclear.md
+            - filterload: protocol/p2p/filterload.md
+            - getblocks: protocol/p2p/getblocks.md
+            - getdata: protocol/p2p/getdata.md
+            - getheader: protocol/p2p/getheaders.md
+            - headers: protocol/p2p/headers.md
+            - inv: protocol/p2p/inv.md
+            - merkleblock: protocol/p2p/merkleblock.md
+            - ping: protocol/p2p/ping.md
+            - pong: protocol/p2p/pong.md
+            - reject: protocol/p2p/reject.md
+            - verack: protocol/network/messages/verack.md
+            - version: protocol/network/messages/version.md
+            - xupdate: protocol/p2p/xupdate.md
+            - xverack: protocol/p2p/xverack.md
+            - xversion: protocol/p2p/xversion.md
+        - Miscellaneous:
+            - Endian: protocol/misc/endian.md
+    - Glossary:
+        - Glossary: glossary.md
+        - Block: glossary/block.md
+        - Constraint script: glossary/constraint__script.md
+        - Hash identifier: glossary/hash__identifier.md
+        - Outpoint: glossary/outpoint.md
+        - Output script: glossary/output__script.md
+        - P2PKH: glossary/p2pkh.md
+        - P2SH: glossary/p2sh.md
+        - Redeem script: glossary/redeem__script.md
+        - SPV: glossary/spv.md
+        - Transaction: glossary/transaction.md
+        - UTXO: glossary/utxo.md
+        - UTXO Set: glossary/utxo__set.md
+    - About:
+        - Contributors: contributors.md
+        - Project history: project-history.md
+        - Style guide: style-guide.md
+        - Target audience: target-audience.md
+        - Protocol history: history/protocol-version.md
 plugins:
     - referencecash
     - search
